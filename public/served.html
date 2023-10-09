@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/smartcontract.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">HInsurance</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="use.html">Use</a></li>
+                    <li><a href="medic.html">Records</a></li>
+                    <li><a href="medical.html">Record</a></li>
+                    <li><a href="details.html">Client</a></li>
+                    <li><a href="served.html">served</a></li>.
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <span id="current_address">Active : </span><br>
+            <button class="btn" onclick="logout()">logout</button>
+        </div>
+        <div id="outer-div">
+            <div id="inner-div">
+                <h1>Retrieve Patients Served by Doctor</h1>
+                <form id="doctorsForm">
+                    <label for="doctorAddressInput">Enter Doctor Address:</label>
+                    <input type="text" id="doctorAddressInput" name="doctorAddressInput" required>
+                    <input type="submit" value=" Get Patients">
+                </form>
+                <p id="patientList"></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="/contract.js"></script>
+</body>
+
+</html>

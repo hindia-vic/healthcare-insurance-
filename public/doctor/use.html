@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/smartcontract.js"></script>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">HInsurance</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="use.html">Use</a></li>
+                    <li><a href="medic.html">Records</a></li>
+                    <li><a href="medical.html">Record</a></li>
+                    <li><a href="details.html">Client</a></li>.
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <span id="current_address">Active : </span><br>
+            <button>logout</button>
+        </div>
+        <div class="medical" id="inner-div">
+            <h2> Use Insurance</h2>
+            <form autocomplete="off">
+                <label>Enter patient's address:</label><br>
+                <input type="text" id="useAddress"><br>
+                <label>Enter amount of insurance to be used:</label><br>
+                <input type="number" id="amountUsed"><br>
+                <button type="button" onclick="useInsurance()">Use insurance</button>
+            </form>
+            <a href="medic.html">Get Medical Record</a>
+        </div>
+    </div>
+    <script src="/contract.js"></script>
+</body>
+
+</html>

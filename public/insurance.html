@@ -1,0 +1,62 @@
+<html>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<!--alertmod is the contract----->
+<!-- ABI and ADDRESS  //background-image: url("doctor.jpg");  -->
+<script src="smartcontract.js"></script>
+<link rel="stylesheet" href="styles.css">
+<head class="navbar">
+    INSURANCE <span style="float: right;" id="current_address">Active : </span>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/"> Home </a>
+                </li>
+                <li>
+                    <a href="insurance.html"> Doctor </a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="outer-div">
+        <div id="inner-div">
+            <h2>get All Patients With Details</h2>
+            <form autocomplete="off">
+                <label>Enter patient's address:</label><br>
+                <input type="text" id="patientAddress"><br>
+                <button type="button" onclick="getAllPatientsWithDetails()">Get all patient details</button><br>
+            </form>
+            <div id="all"></div>
+        </div>
+        <div id="inner-div">
+            <h2>get Patients ServedByDoctor</h2>
+            <form autocomplete="off">
+                <label>Enter patient's address:</label><br>
+                <input type="text" id="doctorad"><br>
+                <button type="button" onclick="getPatientsServedByDoctor()">Get patient details</button><br>
+                <p id="served"></p>
+            </form>
+        </div>
+        <div id="inner-div">
+            <h2>get with index</h2>
+            <form id="patientForm" autocomplete="off">
+                <label for="indexInput">Enter the Index:</label>
+                <input type="number" id="indexInput" name="indexInput" required>
+                <button type="submit">Retrieve</button>
+            </form> 
+            <div id="resultContainer"></div>       
+        </div>
+    </div>
+    <script src="/contract.js"></script>
+</body>
+
+</html>

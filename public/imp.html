@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">HInsurance</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>.
+                </ul>
+            </div>
+
+        </div>
+        <div class="nav">
+            <span id="current_address">Active : </span><br>
+            <button class="btn" onclick="logout()">logout</button>
+        </div>
+        <div class="medical" id="inner-div">
+            <h2>get Patients ServedByDoctor</h2>
+            <form autocomplete="off">
+                <label>Enter patient's address:</label><br>
+                <input type="text" id="doctorad"><br>
+                <button type="button" onclick="getPatientsServedByDoctor()">Get patient details</button><br>
+                <p id="served"></p>
+            </form>
+            <a href="medic.html">Get Medical Record</a>
+        </div>
+    </div>
+    <script src="/contract.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>
